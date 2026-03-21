@@ -90,3 +90,22 @@ If the model is missing, the app will run but AI replies will show an error mess
 
 - `python main.py`
 
+## Windows Installer
+
+You can download the latest Windows setup from the **Releases** section:
+
+- Go to: [Releases](https://github.com/Bear-Coda/Humania-AI-assistant/releases)
+- Download the installer file: **`HumaniaAI-Setup.exe`** (from **Assets**)
+
+> Note: GitHub also shows `Source code (zip)` and `Source code (tar.gz)`.  
+> These are project source archives, **not** the installer.
+
+### Quick Install (Windows)
+
+1. Open the [Releases](https://github.com/Bear-Coda/Humania-AI-assistant/releases) page.
+2. In the latest release, under **Assets**, click `HumaniaAI-Setup.exe`.
+3. Run the installer and follow the setup wizard.
+4. Launch **Humania AI Assistant** from Desktop or Start menu.
+
+---
+If the installer does not appear, expand the **Assets** list in the release.
