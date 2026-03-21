@@ -50,19 +50,5 @@ If the model is missing, the app will run but AI replies will show an error mess
 
 - `python main.py`
 
-## Optional: build EXE later
 
-You can publish the EXE in a later GitHub release.
-
-Typical local build flow:
-
-- `pyinstaller --noconfirm --onefile --windowed main.py`
-
-After building, the executable is usually inside `dist/`.
-
-## Notes
-
-- Chat/user data is stored locally in `app_data.db`.
-- Do not upload private data or local model files.
-- If you want to share the EXE later, use GitHub Releases (recommended).
 
