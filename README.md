@@ -1,6 +1,9 @@
 # Humania AI Assistant
 
 A local desktop AI assistant built with Python and Flet, with animated ASCII character output, chat history, and local LLM inference.
+This software is designed for schools and students who want to learn and practice prompt engineering in an interactive way.
+
+![Main workspace](screenshots/main.png)
 
 ## Features
 
@@ -28,7 +31,17 @@ A local desktop AI assistant built with Python and Flet, with animated ASCII cha
 
 - **Local Privacy**  
   Conversations and user data are stored locally, supporting private use in classroom and personal environments.
-  
+
+## Screenshots and Demo
+
+
+
+### Settings page
+![Settings page](screenshots/Settings%20page.png)
+
+### Short GIF demo
+![Short demo](screenshots/caption.gif)
+
 ## What is included in this repository
 
 - Application source code (`main.py`, UI logic, DB logic, voice logic)
@@ -76,6 +89,4 @@ If the model is missing, the app will run but AI replies will show an error mess
 ## Run the app
 
 - `python main.py`
-
-
 
