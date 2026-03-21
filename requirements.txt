@@ -1,0 +1,5 @@
+flet
+Pillow
+llama-cpp-python
+pyttsx3
+
