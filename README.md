@@ -2,6 +2,33 @@
 
 A local desktop AI assistant built with Python and Flet, with animated ASCII character output, chat history, and local LLM inference.
 
+## Features
+
+- **Prompt Engineering Workspace**  
+  Designed as an educational workspace to practice and improve prompt engineering skills in a structured way.
+
+- **Animated AI Character**  
+  The assistant is represented by a live animated ASCII character that reacts during interactions, making the experience more human and engaging.
+
+- **Voice Interaction**  
+  The character can speak responses using local text-to-speech, adding a more natural conversational feel.
+
+- **Prompt Parameter Configuration**  
+  A dedicated settings area lets you adjust prompting behavior such as:
+  - creativity
+  - response length
+  - focus
+  - vocabulary variety
+  - repetition control
+  - persona and character profile
+
+- **Portable and Offline-Ready**  
+  Built to run as a portable local application.  
+  Internet is **not required** for core usage when the local model is available.
+
+- **Local Privacy**  
+  Conversations and user data are stored locally, supporting private use in classroom and personal environments.
+  
 ## What is included in this repository
 
 - Application source code (`main.py`, UI logic, DB logic, voice logic)
