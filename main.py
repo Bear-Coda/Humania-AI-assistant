@@ -17,7 +17,7 @@ img_female = Image.open(get_path("assets\\face2.png")).convert('L')
 
 async def main(page: ft.Page):
     # --- WINDOW CONFIGURATION ---
-    page.title = "Humania AI assistant"  # Sets the title of the window
+    page.title = "ZerBo6"  # Sets the title of the window
     icon_abs_path = get_path("assets\\icon.ico")
     page.window.icon = icon_abs_path  # Apply the strict pat
     page.window.width = 850
@@ -266,19 +266,18 @@ async def main(page: ft.Page):
     tutorial_view = ft.Container(content=ft.ListView(controls=guide_content, expand=True, spacing=10, padding=30), visible=False, expand=True)
     # --- ABOUT & CREDITS SECTION ---
     about_content = [
-        ft.Text("About Humania AI", size=28, weight="bold", color="blue"),
-        ft.Text("Official Educational Release v1.0", size=12, italic=True, color="grey"),
+        ft.Text("About ZerBo6", size=28, weight="bold", color="blue"),
+        ft.Text("Official Release v1.0", size=12, italic=True, color="grey"),
         ft.Divider(height=20, color="white24"),
         
         ft.Text("Creator & Lead Developer", size=16, weight="bold", color="white"),
         ft.Text("Elwardi Zerdazi", size=14, color="blue"),
-        ft.Text("This software is an original work designed specifically for pedagogical use in schools, focusing on the intersection of AI literacy and human-centric interaction.", size=12),
+        ft.Text("This software is an original work focusing on the intersection of AI literacy and human-centric interaction.", size=12),
         
         ft.Divider(height=10, color="transparent"),
         
         ft.Text("Mission & Purpose", size=16, weight="bold", color="white"),
         ft.Markdown("""
-        *   **Educational Tool:** Dedicated to School for teaching students and adults the art of Prompt Engineering.
         *   **Original Architecture:** Built from the ground up using custom state-management and ASCII animation logic.
         *   **Non-Derivative:** This is a unique standalone application, not a wrapper or copy of existing software.
         """),
@@ -321,10 +320,21 @@ async def main(page: ft.Page):
         ], spacing=15)
         
         # Header with branding and "Created by ElWardi" on the far right
-        header_row = ft.Row([
-            ft.Row([ft.Image(src=get_path("assets\logo2.png"), height=35, fit="contain"), ft.Container(view_toggle, padding={"left": 30})]),
-            ft.Container(ft.Text("Tiptoes School AI Tool", size=10, italic=True, color="blue"), padding={"right": 20})
-        ], alignment="spaceBetween")
+        header_row = ft.Row(
+            [
+                ft.Row(
+                    [
+                        ft.Image(
+                            src=get_path("assets\\logo2.png"),
+                            height=35,
+                            fit="contain"
+                        ),
+                        ft.Container(view_toggle, padding={"left": 30})
+                    ]
+                ),
+            ],
+            alignment="spaceBetween"
+        )
 
         ascii_display = ft.Text(value="", font_family="Consolas", size=6, color="green", no_wrap=True)
         page.add(ft.Column([ft.Container(header_row, padding={"left": 15, "top": 5}), ft.Row([ft.Column([discussion_view, parameters_view, tutorial_view, history_view,about_view], expand=7), ft.Container(content=ascii_display, expand=5)], expand=True)], expand=True, spacing=0))
